@@ -41,7 +41,7 @@ jobs:
           # This could involve deploying to a cloud provider, Docker, etc.
   
   steps:
-    - name: Send Email Notification 
+      name: Send Email Notification 
       uses: dawidd6/action-send-mail@v3
       with:
         server_address: smtp.example.com
