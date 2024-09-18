@@ -39,9 +39,7 @@ jobs:
         run: |
           echo "Deployment logic goes here"
           # This could involve deploying to a cloud provider, Docker, etc.
-
-notify:
-  runs-on: ubuntu-latest
+  
   steps:
     - name: Send Email Notification 
       uses: dawidd6/action-send-mail@v3
