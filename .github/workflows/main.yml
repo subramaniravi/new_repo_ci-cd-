@@ -54,13 +54,4 @@ jobs:
         to: subramaniravi22@gmail.com
         from: github-actions@example.com
 
-notify-slack:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Notify Slack
-      uses: 8398a7/action-slack@v3
-      with:
-        status: ${{ job.status }}
-        fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
-      env:
-        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
